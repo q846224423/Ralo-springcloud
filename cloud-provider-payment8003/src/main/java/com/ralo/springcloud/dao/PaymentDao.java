@@ -1,16 +1,19 @@
-package com.ralo.springcloud.service;
+package com.ralo.springcloud.dao;
 
 import com.ralo.springcloud.entity.PaymentEntity;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
- * @author Ralo
- * @PACKAGE_NAME: com.ralo.springcloud.service
- * @NAME: PaymentService
- * @USER: Ralo
+ * @PACKAGE_NAME: com.ralo.springcloud.dao
+ * @author: Ralo
  * @DATE: 2020/7/21
  */
-public interface PaymentService {
+/**
+ * 测试
+ * */
+@Mapper
+public interface PaymentDao {
     /**
      *insert
      * */
@@ -18,6 +21,9 @@ public interface PaymentService {
 
     /**
      * getid
+     *
      * */
     PaymentEntity getId(@Param("id") Long id);
+
+
 }
